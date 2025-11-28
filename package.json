@@ -1,0 +1,14 @@
+{
+  "name": "bytesniff",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run electron && npm run ui",
+    "electron": "cd electron && npm start",
+    "ui": "cd ui && npm run dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

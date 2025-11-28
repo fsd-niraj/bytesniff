@@ -1,0 +1,15 @@
+# ui
+
+ui/node_modules
+ui/dist
+
+# core
+
+core/bytesniff
+
+# electron
+
+electron/node_modules
+
+# common
+

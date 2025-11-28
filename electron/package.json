@@ -1,0 +1,20 @@
+{
+  "name": "bytesniff",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "cp -r main.js preload.js ../dist/electron"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^39.2.3"
+  },
+  "description": "Electron module for a simple request/response interceptor",
+  "dependencies": {
+    "electron-store": "^11.0.2"
+  }
+}
