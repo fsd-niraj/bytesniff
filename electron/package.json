@@ -4,12 +4,12 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "cp -r main.js preload.js ../dist/electron"
+    "build": "cp -r main.js preload.js ./dist/electron"
   },
   "type": "module",
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "fsd-niraj",
+  "license": "MIT",
   "devDependencies": {
     "electron": "^39.2.3"
   },

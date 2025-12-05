@@ -1,5 +1,5 @@
 import { contextBridge, ipcRenderer } from 'electron';
-import { settings } from './store';
+import { settings } from './store.js';
 
 contextBridge.exposeInMainWorld('backend', {
   send: (channel, data) => {
@@ -23,7 +23,7 @@ contextBridge.exposeInMainWorld('backend', {
     }),
 });
 
-contextBridge.executeInMainWorld('settings', {
-  get: (key) => settings.get(key),
-  set: (key, value) => settings.set(key, value),
-});
+// contextBridge.executeInMainWorld('settings', {
+//   get: (key) => settings.get(key),
+//   set: (key, value) => settings.set(key, value),
+// });

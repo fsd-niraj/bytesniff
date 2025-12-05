@@ -13,3 +13,7 @@ electron/node_modules
 
 # common
 
+/node_modules
+
+# */node_modules
+# */dist

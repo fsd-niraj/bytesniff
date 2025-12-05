@@ -3,12 +3,19 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "npm run electron && npm run ui",
+    "start": "concurrently \"npm run electron\" \"npm run ui\"",
     "electron": "cd electron && npm start",
-    "ui": "cd ui && npm run dev"
+    "ui": "cd ui && npm run dev",
+    "build:electron": "cd electron && npm run build",
+    "build:ui": "cd ui && npm run build",
+    "build:core": "cd core && go build",
+    "build": "npm run build:electron && npm run build:ui && npm run build:core"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "description": ""
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
 }

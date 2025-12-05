@@ -25,7 +25,7 @@ function startGoBackend() {
     } catch {
       return;
     }
-    win.webContents.send('go-event', msg);
+    // win.webContents.send('go-event', msg);
   });
 
   goProcess.on('exit', (code) => {
